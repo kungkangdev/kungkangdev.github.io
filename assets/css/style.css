@@ -430,12 +430,12 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 36px;
+  font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 0;
   font-family: "Poppins", sans-serif;
-  color: #627680;
+  color: #002759;
 }
 
 .section-title p {
@@ -786,16 +786,16 @@ section {
 
 .cta .cta-btn {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 18px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 20px 50px;
   border-radius: 4px;
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  background: #009cea;
+  background: #ff8135;
 }
 
 .cta .cta-btn:hover {
@@ -1018,7 +1018,7 @@ section {
   border-right: 1px solid #eceff0;
   border-bottom: 1px solid #eceff0;
   overflow: hidden;
-  background: #fff;
+  /* background: #fff; */
   height: 120px;
   padding: 40px;
 }
