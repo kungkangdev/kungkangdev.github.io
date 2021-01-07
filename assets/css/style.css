@@ -1053,10 +1053,9 @@ section {
 }
 
 .pricing h3 {
-  font-weight: 400;
-  padding: 20px 15px;
-  font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
+  padding: 20px 0;
+  font-size: 20px;
   color: #777777;
 }
 
@@ -1078,6 +1077,14 @@ section {
   color: #bababa;
   font-size: 16px;
   font-weight: 300;
+}
+
+.pricing h5 {
+  font-weight: 400;
+  padding: 10px 0 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777777;
 }
 
 .pricing ul {
