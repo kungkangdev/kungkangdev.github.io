@@ -155,6 +155,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
+.nav-menu a:not([href]):not([class]) {
+  color: #7b909a;
+}
+
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #009cea;
   text-decoration: none;
