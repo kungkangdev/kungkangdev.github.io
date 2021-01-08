@@ -27,6 +27,16 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186921212-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-186921212-1');
+  </script>
+
   <!-- =======================================================
   * Template Name: Scaffold - v2.2.0
   * Template URL: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
@@ -49,26 +59,10 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Beranda</a></li>
-          <li class="drop-down"><a>Tentang</a>
-            <ul>
-              <li><a href="#about">Alasan memilih kami</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#testimonials">Testimoni</a></li>
-              <!-- li class="drop-down"><a href="#">Deep Drop Down</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li -->
-            </ul>
-          </li>
+          <li class="active"><a href="#hero">Sampul</a></li>
           <li><a href="#services">Jasa</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#pricing">Harga</a></li>
+          <li><a href="#team">Tim</a></li>
 
           <li><a href="#contact">Kontak</a></li>
 
@@ -139,7 +133,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Siapa Saja Klien Kami?</h2>
+          <h2>Siapa Klien Kami?</h2>
         </div>
 
         <div class="row">
@@ -207,11 +201,11 @@
         <div class="section-title" data-aos="fade-up">
           <h2>Jasa yang Kami Tawarkan</h2>
           <p>Kami sangat tertarik untuk memecahkan setiap masalah Anda dengan solusi digital.<br>
-            Jasa yang kami tawarkan tidak sebatas yang di bawah, untuk konsiltasi lebih lanjut silakan <a href="https://wa.me/6282272237535?text=Saya%20tertarik%20bekerjasama%20dengan%20para%20KungKang">hubungi kami</a>.</p>
+            Jasa yang kami tawarkan tidak sebatas yang di bawah, untuk konsiltasi lebih lanjut silakan <a href="https://wa.me/6282272237535?text=Saya%20tertarik%20bekerjasama%20dengan%20KungKangDev">hubungi kami</a>.</p>
         </div>
 
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
             <div class="icon-box icon-box-pink">
               <div class="icon"><i class="bx bx-dock-left" ></i></div>
               <h4 class="title"><a href="">UI/UX Design</a></h4>
@@ -219,7 +213,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box icon-box-cyan">
               <div class="icon"><i class="bx bxl-html5"></i></div>
               <h4 class="title"><a href="">Web Development</a></h4>
@@ -227,7 +221,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box icon-box-green">
               <div class="icon"><i class="bx bx-mobile-alt"></i></div>
               <h4 class="title"><a href="">Android & iOS Apps</a></h4>
@@ -235,6 +229,7 @@
             </div>
           </div>
 
+          <!--
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box icon-box-blue">
               <div class="icon"><i class="bx bx-server"></i></div>
@@ -242,14 +237,75 @@
               <p class="description">Instalasi dan konfigurasi jaringan, server, CCTV, fingerprint, dan lainnya.</p>
             </div>
           </div>
+          -->
 
         </div>
 
       </div>
     </section><!-- End Services Section -->
 
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing section">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Biaya</h2>
+          <p>Harga yang kami tawarkan dijamin termurah di kelasnya, pengerjaan profesional dengan harga mahasiswa.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="zoom-in">
+              <span class="advanced">Termurah</span>
+              <h3>UI/UX Design</h3>
+              <h5><span>Mulai dari</span></h5>
+              <h4><sup>Rp</sup>100k<span> / page</span></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <span class="advanced">Termurah</span>
+              <h3>Web Development</h3>
+              <h5><span>Mulai dari</span></h5>
+              <h4><sup>Rp</sup>300k<span> / web</span></h4>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+              <span class="advanced">Termurah</span>
+              <h3>Android & iOS</h3>
+              <h5><span>Mulai dari</span></h5>
+              <h4><sup>Rp</sup>100k<span> / apps</span></h4>
+            </div>
+          </div>
+          
+          <!--
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              <h3>IT Sytem & Solution</h3>
+              <h5><span>Mulai dari</span></h5>
+              <h4><sup>Rp</sup>200k<span> / tugas</span></h4>
+              <ul>
+                <li>Jaringan</li>
+                <li>Server</li>
+                <li>CCTV</li>
+              </ul>
+            </div>
+          </div>
+          -->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Pricing Section -->
+
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <!-- section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -399,7 +455,7 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section--><!-- End Portfolio Section -->
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
@@ -408,10 +464,10 @@
         <div class="row" data-aos="zoom-in">
           <div class="col-lg-9 text-center text-lg-left">
             <h3>Tunggu apa lagi?</h3>
-            <p> Hubungi kami dan ciptakan software impian Anda sekarang!</p>
+            <p>Mari bekerjasama dan ciptakan software impian Anda sekarang!</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://wa.me/6282272237535?text=Saya%20tertarik%20bekerjasama%20dengan%20para%20KungKang">Let's Talk</a>
+            <a class="cta-btn align-middle" href="https://wa.me/6282272237535?text=Saya%20tertarik%20bekerjasama%20dengan%20KungKangDev">Hubungi Kami</a>
           </div>
         </div>
 
@@ -419,7 +475,7 @@
     </section><!-- End Cta Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <!-- section id="testimonials" class="testimonials">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -487,14 +543,14 @@
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section --><!-- End Testimonials Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="clients team">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>The Team</h2>
+          <h2>KungKangDev Team</h2>
           <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
@@ -560,9 +616,10 @@
 
         </div>
 
+        <!--
         <div class="section-title" data-aos="fade-up">
           <h2>Klien Kami</h2>
-          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
@@ -617,6 +674,7 @@
 
         </div>
       </div>
+      -->
     </section> 
     <!-- End Team Section -->
 
@@ -685,76 +743,6 @@
     </section> -->
     <!-- End Clients Section -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Biaya</h2>
-          <p>Harga yang kami tawarkan dijamin termurah di kelasnya, pengerjaan profesional dengan harga mahasiswa.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="box" data-aos="zoom-in">
-              <h3>UI/UX Design</h3>
-              <h5><span>Mulai dari</span></h5>
-              <h4><sup>Rp</sup>100k<span> / page</span></h4>
-              <ul>
-                <li>Branding</li>
-                <li>Marketing</li>
-                <li>Hero</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <span class="advanced">Terlaris</span>
-              <h3>Web Development</h3>
-              <h5><span>Mulai dari</span></h5>
-              <h4><sup>Rp</sup>300k<span> / web</span></h4>
-              <ul>
-                <li>Domain</li>
-                <li>Hosting</li>
-                <li>Database</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="200">
-              <h3>Android & iOS</h3>
-              <h5><span>Mulai dari</span></h5>
-              <h4><sup>Rp</sup>100k<span> / apps</span></h4>
-              <ul>
-                <li>Native</li>
-                <li>Hybrid</li>
-                <li>Webview</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="300">
-              <h3>IT Sytem & Solution</h3>
-              <h5><span>Mulai dari</span></h5>
-              <h4><sup>Rp</sup>200k<span> / tugas</span></h4>
-              <ul>
-                <li>Jaringan</li>
-                <li>Server</li>
-                <li>CCTV</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Pricing Section -->
-
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
       <div class="container">
@@ -796,7 +784,7 @@
             <a data-toggle="collapse" href="#faq4" class="collapsed">Bagaimana cara melakukan pemesanan?<i class="icofont-simple-up"></i></a>
             <div id="faq4" class="collapse" data-parent=".faq-list">
               <p>
-                Anda bisa menghubungi langsung atau WA ke nomor <a href="https://wa.me/6282272237535?text=Saya%20tertarik%20bekerjasama%20dengan%20para%20KungKang">082272237535</a>atau mengirimkan email ke <a href="mailto:kungkangdev@gmail.com">kungkangdev@gmail.com</a>
+                Anda bisa menghubungi langsung atau WA ke nomor <a href="https://wa.me/6282272237535?text=Saya%20tertarik%20bekerjasama%20dengan%20KungKangDev">082272237535</a>atau mengirimkan email ke <a href="mailto:kungkangdev@gmail.com">kungkangdev@gmail.com</a>
               </p>
             </div>
           </li>
@@ -887,7 +875,7 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="footer-info">
               <h3>KungKangDev</h3>
               <p>
@@ -904,18 +892,15 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-4 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -926,12 +911,12 @@
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
+          <!--div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Jangan Ketinggalan</h4>
             <p>Dapatkan informasi update dan promo</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+            </form-->
 
           </div>
 
@@ -941,7 +926,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>KungKangDev</span></strong>. All Rights Reserved
+        &copy; Copyright 2021 - <strong><span>KungKangDev</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         Theme by <a href="https://bootstrapmade.com/">BootstrapMade</a>
