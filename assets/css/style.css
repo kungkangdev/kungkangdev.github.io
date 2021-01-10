@@ -808,7 +808,7 @@ section {
 
 @media (min-width: 1024px) {
   .cta {
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 }
 
@@ -1320,6 +1320,11 @@ section {
   text-align: center;
   padding: 15px;
   font-weight: 600;
+}
+
+.contact .php-email-form .sent-message a {
+  color: #ea0000;
+  font-size: 1.5em;
 }
 
 .contact .php-email-form .loading {
