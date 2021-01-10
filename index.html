@@ -456,30 +456,31 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-left">
-            <form id="gform" name="gform" action="https://docs.google.com/forms/u/0/d/1b2OofLQLA0S9-7Qy4yUI-BTUnfx8u-dJwnCwoo_igAw/formResponse" method="post" role="form" class="php-email-form" target="hidden_iframe" onsubmit="submitted=true;">
+            <form id="gform" name="gform" action="https://docs.google.com/forms/u/0/d/1b2OofLQLA0S9-7Qy4yUI-BTUnfx8u-dJwnCwoo_igAw/formResponse" method="post" role="form" class="php-email-form" target="hidden_iframe">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Nama Anda</label>
-                  <input type="text" class="form-control" name="entry.2005620554" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" class="form-control" name="entry.2005620554" id="name" data-rule="minlen:1" data-msg="Nama wajib diisi" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Emai Anda</label>
-                  <input type="email" class="form-control" name="entry.1045781291" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <label for="name">Email Anda</label>
+                  <input type="email" class="form-control" name="entry.1045781291" id="email" data-rule="email" data-msg="Masukkan alamat email yang valid." />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
                 <label for="name">No. HP / WA</label>
-                <input type="text" class="form-control" name="entry.1166974658" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="entry.1166974658" id="mobile" data-rule="minlen:11" data-msg="Nomor HP tidak valid" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
                 <label for="name">Pesan</label>
-                <textarea class="form-control" name="entry.839337160" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <textarea class="form-control" name="entry.839337160" id="message" rows="10" data-rule="required" data-msg="Pesan tidak boleh kosong."></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
+                <div class="error-message">Mohon lengkapi semua kolom.</div>
                 <div class="sent-message">Terima kasih telah menghubungi kami!
                   <br>Mohon tunggu, pesan Anda akan segera kami tanggapi.
                   <br>Jika butuh respon yang lebih cepat, silakan hubungi
@@ -571,10 +572,19 @@
   <script src="assets/js/main.js"></script>
   <script type="text/javascript">var submitted=false;</script>
   <script type="text/javascript">
-  $('#gform').on('submit', function(e) {
-    $('#gform .form-group').slideUp(1000);
-    $('.sent-message').slideDown(1000);
-
+    $('#gform').on('submit', function(e) {
+      // validasi form agar tidak kosong
+      if ($.trim($("#name").val()) === "" || $.trim($("#email").val()) === "" || $.trim($("#mobile").val()) === "" || $.trim($("#message").val()) === "") {
+        e.preventDefault();
+        $('.error-message').slideDown(1000);
+      }
+      else {
+        submitted=true;
+        $('#gform .form-group').slideUp(1000);
+        $('.error-message').slideUp(1000);
+        $('.sent-message').slideDown(1000);
+        $('#gform div button:submit').fadeOut(500);
+      }
     });
   </script>
 
